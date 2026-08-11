@@ -25,7 +25,11 @@ const diasUteisHandler = (request, response) => {
 
     // para caso tenha mais de um ano entre as datas
     const anos = [];
-    for (let ano = inicio.getFullYear(); ano <= fim.getFullYear(); ano += 1) {
+    for (
+      let ano = inicio.getUTCFullYear();
+      ano <= fim.getUTCFullYear();
+      ano += 1
+    ) {
       anos.push(ano);
     }
 
@@ -34,12 +38,15 @@ const diasUteisHandler = (request, response) => {
 
     const diasUteis = [];
 
+    // Toda a aritmética precisa ficar em UTC: "2026-08-03" vira meia-noite UTC,
+    // e um getDay() local num servidor a oeste de Greenwich leria o dia
+    // anterior — toda segunda-feira seria descartada como domingo.
     for (
       let data = new Date(inicio);
       data <= fim;
-      data.setDate(data.getDate() + 1)
+      data.setUTCDate(data.getUTCDate() + 1)
     ) {
-      const dia = data.getDay();
+      const dia = data.getUTCDay();
       const dataString = data.toISOString().split('T')[0];
       const isFeriado = feriados.some((feriado) => feriado.date === dataString);
 
