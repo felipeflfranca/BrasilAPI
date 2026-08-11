@@ -16,7 +16,10 @@ const obtainPixParticipantList = async (actual = true) => {
 
     return response;
   } catch (error) {
-    if (actual && error.response.status === 404) {
+    // O BCB responde 401 para o arquivo do dia ainda não publicado e 404 para
+    // dias removidos; sem response (timeout, rede) o optional chaining evita
+    // um TypeError que mascararia o erro real.
+    if (actual && [401, 403, 404].includes(error.response?.status)) {
       return getPixParticipants(false);
     }
 
