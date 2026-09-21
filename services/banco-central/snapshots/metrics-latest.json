@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-14T12:14:57.215Z",
-  "run_id": "2026-09-14T12-14-54-613Z",
-  "snapshot_file": "banks-headquarters-2026-09-14T12-14-54-613Z.json",
+  "generated_at": "2026-09-21T12:22:57.517Z",
+  "run_id": "2026-09-21T12-22-55-128Z",
+  "snapshot_file": "banks-headquarters-2026-09-21T12-22-55-128Z.json",
   "totals": {
     "banks": 474,
     "with_address": 449,
@@ -9,7 +9,7 @@
     "coverage_total": 0.9472573839662447
   },
   "deltas": {
-    "previous_with_address": 451,
+    "previous_with_address": 449,
     "previous_without_address": 25,
     "new_nulls": 0,
     "recovered_addresses": 0
