@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-19T12:36:01.627Z",
-  "run_id": "2026-10-19T12-36-00-902Z",
-  "snapshot_file": null,
+  "generated_at": "2026-10-26T12:31:36.568Z",
+  "run_id": "2026-10-26T12-31-33-925Z",
+  "snapshot_file": "banks-headquarters-2026-10-26T12-31-33-925Z.json",
   "totals": {
     "banks": 471,
-    "with_address": 446,
-    "without_address": 25,
-    "coverage_total": 0.9469214437367304
+    "with_address": 445,
+    "without_address": 26,
+    "coverage_total": 0.9447983014861996
   },
   "deltas": {
     "previous_with_address": 446,
     "previous_without_address": 25,
-    "new_nulls": 0,
+    "new_nulls": 1,
     "recovered_addresses": 0
   },
   "conflicts": {
@@ -19,9 +19,7 @@
     "method": "same_normalized_name_with_different_address_source"
   },
   "sources": {
-    "bcb_failed_sources": [
-      "all"
-    ],
+    "bcb_failed_sources": [],
     "cnpj_lookup_candidates": 0,
     "cnpj_failed_lookups": 0,
     "cnpj_failed_samples": [],
@@ -36,7 +34,7 @@
     }
   },
   "fallback": {
-    "used_previous_snapshot": true,
-    "reason": "source_collection_failure"
+    "used_previous_snapshot": false,
+    "reason": null
   }
 }
