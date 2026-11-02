@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-10-26T12:31:36.568Z",
-  "run_id": "2026-10-26T12-31-33-925Z",
-  "snapshot_file": "banks-headquarters-2026-10-26T12-31-33-925Z.json",
+  "generated_at": "2026-11-02T15:08:56.623Z",
+  "run_id": "2026-11-02T15-08-54-777Z",
+  "snapshot_file": "banks-headquarters-2026-11-02T15-08-54-777Z.json",
   "totals": {
-    "banks": 471,
-    "with_address": 445,
-    "without_address": 26,
-    "coverage_total": 0.9447983014861996
+    "banks": 470,
+    "with_address": 443,
+    "without_address": 27,
+    "coverage_total": 0.9425531914893617
   },
   "deltas": {
-    "previous_with_address": 446,
-    "previous_without_address": 25,
+    "previous_with_address": 445,
+    "previous_without_address": 26,
     "new_nulls": 1,
     "recovered_addresses": 0
   },
